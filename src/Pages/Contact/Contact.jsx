@@ -58,7 +58,7 @@ const Contact = () => {
                 <FiMail className="mr-3 text-2xl text-white" />
                 Email Address
               </h3>
-              <p className="text-lg text-gray-400">souravdn.dev@gmail.com</p>
+              <p className="text-base md:text-lg text-gray-400 break-all">souravdn.dev@gmail.com</p>
             </motion.div>
 
             {/* Phone Number Card */}
