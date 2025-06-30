@@ -1,4 +1,3 @@
-import React from "react";
 import { motion } from "framer-motion";
 
 // Importing icons from React Icons
