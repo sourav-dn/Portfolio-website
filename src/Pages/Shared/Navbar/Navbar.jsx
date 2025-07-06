@@ -67,7 +67,7 @@ const Navbar = () => {
       {/* Resume Button */}
       <div className="navbar-end">
         <a
-          href="https://drive.google.com/file/d/1I38jkMKagTRVnjf1RxYpfBLJpLRx4rc4/view?usp=sharing"
+          href="https://drive.google.com/file/d/15t15rjhY7E4hBHt1jFGjCbUnwofm5oKZ/view?usp=sharing"
           target="_blank"
           rel="noopener noreferrer"
           className="btn btn-outline border-indigo-400 text-indigo-200 hover:bg-indigo-600 hover:text-white"
