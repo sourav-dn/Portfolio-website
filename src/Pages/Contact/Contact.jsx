@@ -7,7 +7,7 @@ import bgImg from "../../assets/Images/footer.png";
 const Contact = () => {
   return (
     <section
-      className="py-16 lg:h-[500px] bg-[#160635]"
+      className="py-16 lg:h-[900px] bg-[#160635]"
       style={{ backgroundImage: `url(${bgImg})`, backgroundSize: "cover" }}
     >
       <div
@@ -47,6 +47,45 @@ const Contact = () => {
 
           {/* Right side Contact Info */}
           <div className="w-1/2 grid grid-cols-1 gap-6">
+          {/* Contact Form */}
+            <motion.form
+              className="p-6 mt-5 rounded-lg shadow-lg bg-white/10 backdrop-blur-md space-y-4"
+              initial={{ opacity: 0, y: 50 }}
+              animate={{ opacity: 1, y: 0 }}
+              transition={{ duration: 1 }}
+              onSubmit={(e) => {
+                e.preventDefault();
+                alert("Message sent successfully!");
+              }}
+            >
+              <h3 className="text-2xl font-semibold text-white mb-2">
+                Send Me a Message
+              </h3>
+              <input
+                type="text"
+                placeholder="Your Name"
+                className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-gray-300 outline-none"
+                required
+              />
+              <input
+                type="email"
+                placeholder="Your Email"
+                className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-gray-300 outline-none"
+                required
+              />
+              <textarea
+                placeholder="Your Message"
+                rows="4"
+                className="w-full p-3 rounded-lg bg-white/20 text-white placeholder-gray-300 outline-none"
+                required
+              ></textarea>
+              <button
+                type="submit"
+                className="w-full py-3 bg-purple-600 hover:bg-purple-700 text-white rounded-lg shadow-lg transition-all duration-300"
+              >
+                Send Message
+              </button>
+            </motion.form>
             {/* Email Card */}
             <motion.div
               className="p-4 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300"
@@ -86,7 +125,7 @@ const Contact = () => {
                 <FaWhatsappSquare className="mr-3 text-2xl text-white" />
                 WhatsApp Number
               </h3>
-              <p className="text-lg text-gray-400">+8801984553445</p>
+              <p className="text-lg pb-24 text-gray-400">+8801984553445</p>
             </motion.div>
           </div>
         </div>
