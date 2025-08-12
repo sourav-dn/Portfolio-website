@@ -116,7 +116,7 @@ const Contact = () => {
 
             {/* WhatsApp Card */}
             <motion.div
-              className="p-4 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300"
+              className="p-4 mb-24 rounded-lg shadow-lg transform hover:scale-105 hover:shadow-xl transition-all duration-300"
               initial={{ opacity: 0, y: 50 }}
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 1 }}
@@ -125,7 +125,7 @@ const Contact = () => {
                 <FaWhatsappSquare className="mr-3 text-2xl text-white" />
                 WhatsApp Number
               </h3>
-              <p className="text-lg pb-24 text-gray-400">+8801984553445</p>
+              <p className="text-lg pb-4 text-gray-400">+8801984553445</p>
             </motion.div>
           </div>
         </div>
